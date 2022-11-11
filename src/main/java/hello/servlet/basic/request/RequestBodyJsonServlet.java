@@ -20,7 +20,7 @@ public class RequestBodyJsonServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println(">>>" + request.getParameterNames());
+        System.out.println(">>>"  + request.getParameterNames());
         request.getParameterNames().asIterator()
                 .forEachRemaining(name -> System.out.println("name = " + name));
 
